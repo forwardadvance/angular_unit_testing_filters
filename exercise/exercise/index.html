@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="app/app.css">
+  <title>Simple Controller Testing</title>
+  <script src="app/angular.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/lowpass.filter.js"></script>
+</head>
+<body ng-app="app">
+  <input type="range" min="0" max="10" ng-model="min" />
+  <br />
+  {{[1,2,3,4,5,6,7,8,9] | lowPass:min}}
+</body>
+</html>
